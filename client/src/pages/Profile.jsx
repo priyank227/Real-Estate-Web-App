@@ -176,7 +176,7 @@ export default function Profile() {
           ) : filePerc > 0 && filePerc < 100 ? (
             <span className="text-slate-700">{`Uploading ${filePerc}%`}</span>
           ) : filePerc === 100 ? (
-            <span className="text-green-700">Image successfully uploaded</span>
+            <span className="text-blue-700">Image successfully uploaded</span>
           ) : (
             ""
           )}
@@ -211,7 +211,7 @@ export default function Profile() {
           {loading ? "Loading..." : "Update"}
         </button>
         <Link
-          className="bg-green-700 text-white p-3 rounded-lg uppercase text-center hover:opacity-95"
+          className="bg-blue-700 text-white p-3 rounded-lg uppercase text-center hover:opacity-95"
           to={"/create-listing"}
         >
           Create Listing
@@ -229,10 +229,10 @@ export default function Profile() {
         </span>
       </div>
       <p className="text-red-700 mt-5">{error ? error : ""}</p>
-      <p className="text-green-700 mt-5">
+      <p className="text-blue-700 mt-5">
         {updateSuccess ? "Profile Updated successfully" : ""}
       </p>
-      <button onClick={handleShowListings} className="text-green-700 w-full">
+      <button onClick={handleShowListings} className="text-blue-700 w-full">
         Show Listings
       </button>
       <p className="text-red-700 mt-5">
@@ -270,7 +270,7 @@ export default function Profile() {
                   Delete
                 </button>
                 <Link to={`/update-listing/${listing._id}`}>
-                  <button className="text-green-700 uppercase">Edit</button>
+                  <button className="text-blue-700 uppercase">Edit</button>
                 </Link>
               </div>
             </div>
